@@ -25,7 +25,7 @@ picture,
 svg,
 canvas {
   display: block;
-  max-inline-size: 100%;
+    max-inline-size: 100%;
   block-size: auto;
 }
 
@@ -74,6 +74,7 @@ body {
   font-weight: var(--fw-medium);
   min-height: 100vh;
   background: var(--clr-gradient-bg);
+  overflow-x: hidden;
 }
 
 header {
@@ -148,15 +149,16 @@ main .button:hover::after, footer .button:hover::after {
   opacity: 0.5;
 }
 
-.section-hero .section-hero-image {
+.section-hero .section-hero-image img {
+  display: block;
   position: relative;
-  scale: 1.25;
-  margin: 4rem auto 0;
+  aspect-ratio: 1 / 1;
+  margin: 2rem auto 0;
   pointer-events: none;
 }
 
 .section-courses {
-  margin: 1rem 1rem 5rem;
+  margin: 0rem 1rem 5rem;
 }
 
 .section-courses h2 {
@@ -187,7 +189,7 @@ main .button:hover::after, footer .button:hover::after {
 .section-courses li img {
   position: absolute;
   top: 0;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 
 .section-courses h3 {
@@ -225,4 +227,14 @@ footer .logo {
 footer .button {
   background: var(--clr-gradient-2);
   padding: 0.75rem 1.5rem;
+}
+
+@media(min-width: 48rem) {
+  :root {
+
+  }
+
+  header {
+    margin: 2rem 2rem 0;
+  }
 }
