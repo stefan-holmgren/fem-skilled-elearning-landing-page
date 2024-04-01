@@ -311,6 +311,7 @@ footer .button {
 
   .section-hero .button {
     padding: 1rem 2rem;
+    margin-top: .5rem;
   }
   
   .section-courses {
