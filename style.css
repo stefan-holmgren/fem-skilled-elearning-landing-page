@@ -167,7 +167,6 @@ main .button:hover::after, footer .button:hover::after {
   line-height: 1.33;
   color: var(--clr-primary-comp);
   background: var(--clr-gradient-1);
-  margin-bottom: 1.5rem;
   border-radius: 0.625rem;
   padding: 1.5rem 1.75rem 2rem;
 }
@@ -178,12 +177,18 @@ main .button:hover::after, footer .button:hover::after {
   gap: 2.5rem;
 }
 
-.section-courses li {
+.section-courses li:not(.section-courses-heading) {
   position: relative;
   background-color: var(--clr-primary-comp);
   padding: 3.5rem 1.75rem 2rem;
   border-radius: 0.625rem;
   box-shadow: var(--shadow-course);
+}
+
+.section-courses li.section-courses-heading h2 {
+  height: 100%;
+  margin: 0;
+  padding: 3.5rem 2rem;
 }
 
 .section-courses li img {
@@ -231,10 +236,46 @@ footer .button {
 
 @media(min-width: 48rem) {
   :root {
-
   }
 
   header {
-    margin: 2rem 2rem 0;
+    margin: 2rem 2.5rem 0;
+  }
+
+  .section-hero {
+    position: relative;
+    margin: 4rem 2.5rem 0;
+    min-height: 26rem;
+  }
+
+  .section-hero .section-hero-information {
+    max-width: calc(100% - 20rem);;
+  }
+
+  .section-hero .section-hero-image img {
+    position: absolute;
+    transform:translate(50%, -33%);
+    margin: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .section-courses {
+    margin: 4rem 2.5rem 5.375rem;
+  }
+
+  .section-courses ul {
+    display: grid;
+    column-gap: 0.6875rem;
+    row-gap: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-courses h2 {
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    padding: 2.25rem 2.5rem;
   }
 }
