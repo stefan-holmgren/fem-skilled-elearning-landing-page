@@ -249,7 +249,7 @@ footer .button {
   }
 
   .section-hero .section-hero-information {
-    max-width: calc(100% - 20rem);;
+    max-width: calc(100% - 20rem);
   }
 
   .section-hero .section-hero-image img {
@@ -277,5 +277,47 @@ footer .button {
 
   footer {
     padding: 2.25rem 2.5rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  :root {
+    --fs-m: 1.125rem;
+    --fs-heading-l: 3.5rem;
+  }
+
+  header {
+    margin: 1.5rem 10.3125rem 0rem;
+  }
+
+  .section-hero {
+    margin: 10.75rem 10.3125rem 0;
+    min-height: 29rem;
+  }
+
+  .section-hero .section-hero-information {
+    max-width: calc(100% - 39rem);
+  }
+
+  .section-hero .section-hero-image img {
+    transform:translate(50%, -44%);
+  }
+
+  .section-hero .button {
+    padding: 1rem 2rem;
+  }
+  
+  .section-courses {
+    margin: 7rem 10.3125rem 8.75rem;
+  }
+
+  .section-courses ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 5rem;
+  }
+
+  footer {
+    padding: 2rem 10.3125rem;
   }
 }
