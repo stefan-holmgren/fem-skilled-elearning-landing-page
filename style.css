@@ -284,10 +284,16 @@ footer .button {
   :root {
     --fs-m: 1.125rem;
     --fs-heading-l: 3.5rem;
+    --fs-heading-m: 2rem;
+    --fs-heading-s: 1.5rem;
   }
 
   header {
     margin: 1.5rem 10.3125rem 0rem;
+  }
+
+  header .button, main .button, footer .button {
+    padding: 0.875rem 2rem;
   }
 
   .section-hero {
@@ -310,6 +316,7 @@ footer .button {
   .section-courses {
     margin: 7rem 10.3125rem 8.75rem;
   }
+
 
   .section-courses ul {
     grid-template-columns: 1fr 1fr 1fr;
